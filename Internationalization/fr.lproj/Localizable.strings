@@ -1,0 +1,25 @@
+/* 
+  Localizable.strings
+  Internationalization
+
+  Created by lyl on 2017/2/22.
+  Copyright © 2017年 lyl. All rights reserved.
+*/
+
+"homePageTitle"       = "Démonstration l’internationalisation";
+
+"selectPageTitle"     = "Choisir les langues";
+
+"currentLanguage"     = "Langues actuelles";
+
+"selectLanguageBtn"   = "Choisirleslangues";
+
+"language"            = "français";
+
+"Chinese"             = "chinois";
+
+"English"             = "anglais";
+
+"French"              = "français";
+
+"back"                = "retour";

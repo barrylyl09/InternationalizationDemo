@@ -1,0 +1,10 @@
+/* 
+  InfoPlist.strings
+  Internationalization
+
+  Created by lyl on 2017/2/22.
+  Copyright © 2017年 lyl. All rights reserved.
+*/
+
+
+CFBundleDisplayName = "l’internationalisation";   // 程序在法语环境下的Display名称
