@@ -38,7 +38,7 @@
 }
 
 #pragma mark --- get current language (zh-Hans or en or fr)
--(void)getCurrentLanguageAndSet
+- (void)getCurrentLanguageAndSet
 {
     NSArray * languageArr = [NSLocale preferredLanguages];
     NSLog(@"%@",languageArr);

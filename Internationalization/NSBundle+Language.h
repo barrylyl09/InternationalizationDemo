@@ -10,7 +10,7 @@
 
 @interface NSBundle (Language)
 
-+(void)setLanguage:(NSString*)language;
-+(NSString *)getLanguage;
++ (void)setLanguage:(NSString*)language;
++ (NSString *)getLanguage;
 
 @end

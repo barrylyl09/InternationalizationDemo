@@ -40,47 +40,47 @@
 }
 
 #pragma mark --- TableView协议方法
--(CGFloat)tableView:(UITableView *)tableView heightForHeaderInSection:(NSInteger)section    //表头内容高度
+- (CGFloat)tableView:(UITableView *)tableView heightForHeaderInSection:(NSInteger)section    //表头内容高度
 {
     return 1;
 }
 
--(CGFloat)tableView:(UITableView *)tableView heightForFooterInSection:(NSInteger)section    //表尾内容高度
+- (CGFloat)tableView:(UITableView *)tableView heightForFooterInSection:(NSInteger)section    //表尾内容高度
 {
     return 1;
 }
 
--(CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath   //每行内容高度
+- (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath   //每行内容高度
 {
     UITableViewCell * cell  = [self tableView:tableView cellForRowAtIndexPath:indexPath];
     return cell.frame.size.height;
 }
 
--(NSInteger)numberOfSectionsInTableView:(UITableView *)tableView    //tableview有几组内容
+- (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView    //tableview有几组内容
 {
     return 1;
 }
 
--(NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section     //每组内容个数
+- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section     //每组内容个数
 {
     return arr.count;
 }
 
 #pragma mark --- 表头与表尾
--(UIView *)tableView:(UITableView *)tableView viewForHeaderInSection:(NSInteger)section{
+- (UIView *)tableView:(UITableView *)tableView viewForHeaderInSection:(NSInteger)section{
     UIView * view = [[UIView alloc]initWithFrame:CGRectMake(0, 0, self.view.frame.size.width, 1)];
     view.backgroundColor = [UIColor whiteColor];
     return view;
 }   //自定义表头视图
 
--(UIView *)tableView:(UITableView *)tableView viewForFooterInSection:(NSInteger)section     //表尾视图
+- (UIView *)tableView:(UITableView *)tableView viewForFooterInSection:(NSInteger)section     //表尾视图
 {
     UIView * view = [[UIView alloc]initWithFrame:CGRectMake(0, 0, self.view.frame.size.width, 1)];
     view.backgroundColor = [UIColor whiteColor];
     return view;
 }
 
--(UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath       //每行内容
+- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath       //每行内容
 {
     
     static NSString * CellIdenfifier = @"SelectLanguageTableViewCell";
@@ -97,7 +97,7 @@
     return cell;
 }
 
--(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath      //某行选中的效果
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath      //某行选中的效果
 {
     //设置系统语言
     if (indexPath.row == 0) {

@@ -19,7 +19,7 @@ static const char routeBundle=0;
 @end
 
 @implementation BundleNew
--(NSString*)localizedStringForKey:(NSString *)key value:(NSString *)value table:(NSString *)tableName
+- (NSString*)localizedStringForKey:(NSString *)key value:(NSString *)value table:(NSString *)tableName
 {
     NSBundle* bundle = objc_getAssociatedObject(self, &routeBundle);
 //    NSLog(@"%@\n",objc_getAssociatedObject(self, &routeBundle));
@@ -29,7 +29,7 @@ static const char routeBundle=0;
 @end
 
 @implementation NSBundle (Language)
-+(void)setLanguage:(NSString*)language
++ (void)setLanguage:(NSString*)language
 {
     static dispatch_once_t onceToken;
     dispatch_once(&onceToken, ^
@@ -49,7 +49,7 @@ static const char routeBundle=0;
      */
 }
 
-+(NSString *)getLanguage
++ (NSString *)getLanguage
 {
     static dispatch_once_t onceToken;
     dispatch_once(&onceToken, ^
